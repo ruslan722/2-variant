@@ -19,8 +19,9 @@ db = MySQLDatabase(
 
 class BaseModel(Model):
     """Базовая модель, к которой подключается база данных."""
+
     class Meta:
-        '''Подключение к базе данных.'''
+        '''Мета-класс для подключения к базе данных.'''
         database = db
 
 
@@ -160,9 +161,9 @@ class Product(BaseModel):
     workers_count = IntegerField()
 
 
-    db.connect()
-    db.create_tables([
-        Partner, Manager, Order, OrderItem, Employee, EquipmentAccess,
-        AccessLog, Material, WarehouseOperation, Supplier, Product,
-    ])
-    db.close()
+db.connect()
+db.create_tables([
+    Partner, Manager, Order, OrderItem, Employee, EquipmentAccess,
+    AccessLog, Material, WarehouseOperation, Supplier, Product,
+])
+db.close()
