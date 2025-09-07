@@ -160,7 +160,6 @@ class Product(BaseModel):
     workers_count = IntegerField()
 
 
-if __name__ == "__main__":
     db.connect()
     db.create_tables([
         Partner, Manager, Order, OrderItem, Employee, EquipmentAccess,
