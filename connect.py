@@ -1,6 +1,4 @@
-"""
-Модели базы данных для системы управления предприятием.
-"""
+"""Модели базы данных для системы управления предприятием."""
 
 from peewee import (
     AutoField, CharField, IntegerField, FloatField, DateField,
