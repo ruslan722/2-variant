@@ -158,10 +158,24 @@ class Product(BaseModel):
     workshop_number = CharField()
     workers_count = IntegerField()
 
+class App(BaseModel):
+    """Приложение."""
+
+    id = AutoField()
+    type = CharField()
+    name = CharField()
+    article = CharField()
+    min_price = IntegerField()
+    width = IntegerField()
+    price = IntegerField()
+
+
+
 
 db.connect()
 db.create_tables([
     Partner, Manager, Order, OrderItem, Employee, EquipmentAccess,
     AccessLog, Material, WarehouseOperation, Supplier, Product,
+    App
 ])
 db.close()
