@@ -51,6 +51,4 @@ for i in Oboi:
                   
     y_position += 130
 
-
-
 root.mainloop()
