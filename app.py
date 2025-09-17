@@ -55,11 +55,11 @@ for i in Oboi:
 
 
 back_btn = Label(root, text=' <', bg='#405C73', fg='white',
-                 font=('Constantia', 14), width=10, height=2)
-back_btn.place(x=50, y=540)
+                 font=('Constantia', 12), width=8, height=2)
+back_btn.place(x=100, y=540)
 
 next_btn = Label(root, text=' >', bg='#405C73', fg='white',
-                 font=('Constantia', 14), width=10, height=2)
+                 font=('Constantia', 12), width=8, height=2)
 next_btn.place(x=430, y=540)
 
 root.mainloop()
