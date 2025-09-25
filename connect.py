@@ -169,6 +169,13 @@ class App(BaseModel):
     width = IntegerField()
     price = IntegerField()
 
+class Two_widow(BaseModel):
+    """Окно второе."""
+
+    id = AutoField()
+    material = CharField()
+    kolvo = IntegerField()
+
 
 
 
@@ -176,6 +183,6 @@ db.connect()
 db.create_tables([
     Partner, Manager, Order, OrderItem, Employee, EquipmentAccess,
     AccessLog, Material, WarehouseOperation, Supplier, Product,
-    App
+    App, Two_widow
 ])
 db.close()
